@@ -1,0 +1,28 @@
+$kind: http-request
+name: postman-echo.com/get
+description: ""
+url: https://jsonplaceholder.typicode.com/posts
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"MY First POST request\",\r
+
+    \    \"body\":\"Learning postman\",\r
+
+    \    \"userId\":1\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });"
+    language: text/javascript
+  - type: beforeRequest
+    code: ""
+    language: text/javascript
+order: 4000

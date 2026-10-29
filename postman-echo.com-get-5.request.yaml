@@ -1,0 +1,20 @@
+$kind: http-request
+name: postman-echo.com/get
+description: ""
+url: https://jsonplaceholder.typicode.com/posts/1
+method: DELETE
+body:
+  type: json
+  content: ""
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status code is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });"
+    language: text/javascript
+  - type: beforeRequest
+    code: ""
+    language: text/javascript
+order: 6000

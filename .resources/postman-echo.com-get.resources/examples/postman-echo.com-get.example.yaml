@@ -1,0 +1,52 @@
+$kind: http-example
+name: postman-echo.com/get
+request:
+  url: postman-echo.com/get
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Mon, 26 Oct 2026 09:18:25 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: etag
+      value: W/"22f-+sAZVGTCinMRf0FLtiYAGuY3hig"
+    - key: vary
+      value: Accept-Encoding
+    - key: x-envoy-upstream-service-time
+      value: "5"
+    - key: cf-cache-status
+      value: DYNAMIC
+    - key: set-cookie
+      value: sails.sid=s%3AotSsAutdnP693kntaau8Bo4wvqqplvVP.jKgX%2FPZKvPBZ5PTzZidFYUCKvVmtspvQt2nfIj%2BxjvQ; Path=/; HttpOnly
+    - key: set-cookie
+      value: _cfuvid=Ef4xuGYKUmpKkq_ZhG6QCJznGQABFTUEMfcezQzhFnw-1793006304.9910853-1.0.1.1-v7Vbg_n9G8uXei7U3z5FgSCMDnNbNQHrMw.61BTJZuo; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+    - key: content-encoding
+      value: gzip
+    - key: server
+      value: cloudflare
+    - key: cf-ray
+      value: a5085f9e29465b98-MAA
+  body:
+    type: json
+    content: |-
+      {
+        "args": {},
+        "headers": {
+          "host": "postman-echo.com",
+          "accept-encoding": "gzip",
+          "accept": "*/*",
+          "user-agent": "PostmanRuntime/2.11.0",
+          "x-forwarded-proto": "https",
+          "postman-token": "a80978f5-6b9e-42b6-80e8-fb685724b81b",
+          "cookie": "__cf_bm=MXIyaktkz.DKUvbmvqVwE0euQSq6aNe8L0u6NxBH6CA-1793006071.9395168-1.0.1.1-x8YlCz87cqMXpUcIosrjR3CYunmxvXuemXvBi.oE8tXKP4IIraEp3MWraOnCWmHP1qJhmZs85rYWVU5V8gdJXM8cTw43ctbx5kSo9PAb3vHRZztxVVJIViT2gDYdWHLM; sails.sid=s%3AI-chDz98ufCoK3uwnLX2NSExANKH8wqO.8mbvg%2Bf0vfbVJ6VESlnt9wpZqBWm0wxLZMZkQy1PKQo"
+        },
+        "url": "https://postman-echo.com/get"
+      }
+order: 1000
